@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using EventStore.Common.Log;
 using EventStore.Common.Utils;
+using EventStore.Core;
 using EventStore.Core.Bus;
 using EventStore.Core.Messaging;
 using EventStore.Core.Services;

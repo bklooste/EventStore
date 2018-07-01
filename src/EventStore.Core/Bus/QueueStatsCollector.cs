@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Net.Configuration;
+//using System.Net.Configuration;
 using System.Threading;
 using EventStore.Common.Utils;
 using EventStore.Core.Messaging;

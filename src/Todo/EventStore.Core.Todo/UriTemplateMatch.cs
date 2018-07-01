@@ -29,7 +29,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 
-namespace System
+namespace EventStore.Core
 {
     public class UriTemplateMatch
     {

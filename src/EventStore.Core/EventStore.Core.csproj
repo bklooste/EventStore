@@ -70,8 +70,8 @@
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.5.0" />
     
-    <PackageReference Include="System.ServiceModel.Http" Version="4.5.1" />
-    <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.1" />
+    <!--<PackageReference Include="System.ServiceModel.Http" Version="4.5.1" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.1" />-->
     
     <!--<Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />-->

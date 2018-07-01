@@ -38,7 +38,7 @@ namespace EventStore.Core.TransactionLog.Checkpoint
                                                     Guid.NewGuid().ToString(),
                                                     sizeof(long),
                                                     MemoryMappedFileAccess.ReadWrite,
-                                                    new MemoryMappedFileSecurity(),
+                                                  //TODO remove mem security  new MemoryMappedFileSecurity(),
                                                     HandleInheritability.None,
                                                     false);
             _accessor = _file.CreateViewAccessor(0, sizeof(long));

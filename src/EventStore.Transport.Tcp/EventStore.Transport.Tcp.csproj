@@ -53,6 +53,6 @@
       <HintPath>..\libs\protobuf-v2\protobuf-net.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.XML" />
+    <!--<PackageReference Include="System.XML" Version="4.3.0" />-->
   </ItemGroup>
 </Project>

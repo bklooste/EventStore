@@ -33,7 +33,7 @@ using System.Collections.Specialized;
 using System.Globalization;
 using System.Text;
 
-namespace System
+namespace EventStore.Core
 {
     public class UriTemplate
     {

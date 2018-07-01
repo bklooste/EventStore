@@ -51,7 +51,7 @@ namespace EventStore.Core
             var mutexName = string.Format("ESCLUSTERNODE:{0}", pid);
             try
             {
-                using (Mutex.OpenExisting(mutexName, MutexRights.ReadPermissions))
+                using (Mutex.OpenExisting(mutexName))
                 {
                     return true;
                 }
