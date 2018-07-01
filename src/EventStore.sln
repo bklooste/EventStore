@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Todo", "Todo", "{FA9BE2E5-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Core.Todo", "Todo\EventStore.Core.Todo\EventStore.Core.Todo.csproj", "{AA98892A-D223-41DE-838B-17B1D49C691F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventStore.CoreClusterNode", "EventStore.CoreClusterNode\EventStore.CoreClusterNode.csproj", "{6A53960A-8EBF-46AA-AEED-44C8C3853251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,6 +134,12 @@ Global
 		{AA98892A-D223-41DE-838B-17B1D49C691F}.DebugAsserts|Any CPU.Build.0 = Debug|Any CPU
 		{AA98892A-D223-41DE-838B-17B1D49C691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA98892A-D223-41DE-838B-17B1D49C691F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.DebugAsserts|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.DebugAsserts|Any CPU.Build.0 = Debug|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A53960A-8EBF-46AA-AEED-44C8C3853251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
