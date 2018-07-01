@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventStore.Projections.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventStore.Projections.Core.Tests", "EventStore.Projections.Core.Tests\EventStore.Projections.Core.Tests.csproj", "{B3792B44-423E-4937-B065-F2D61785017F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Todo", "Todo", "{FA9BE2E5-9212-4B9E-8FF6-8B29418AEB6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Core.Todo", "Todo\EventStore.Core.Todo\EventStore.Core.Todo.csproj", "{AA98892A-D223-41DE-838B-17B1D49C691F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -122,9 +126,18 @@ Global
 		{B3792B44-423E-4937-B065-F2D61785017F}.DebugAsserts|Any CPU.Build.0 = Debug|Any CPU
 		{B3792B44-423E-4937-B065-F2D61785017F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3792B44-423E-4937-B065-F2D61785017F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.DebugAsserts|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.DebugAsserts|Any CPU.Build.0 = Debug|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA98892A-D223-41DE-838B-17B1D49C691F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA98892A-D223-41DE-838B-17B1D49C691F} = {FA9BE2E5-9212-4B9E-8FF6-8B29418AEB6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6656E49B-8BAC-40AB-B79C-53FBC8872043}
