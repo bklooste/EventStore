@@ -1,6 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>net461</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <AssemblyTitle>EventStore.ClusterNode.Web</AssemblyTitle>
     <Company>Event Store LLP</Company>
@@ -40,7 +40,6 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EventStore.ClusterNode.Web</RootNamespace>
     <AssemblyName>EventStore.ClusterNode.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

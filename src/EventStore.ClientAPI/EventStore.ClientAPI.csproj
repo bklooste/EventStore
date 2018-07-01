@@ -1,6 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>net461</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <AssemblyTitle>EventStore.ClientAPI</AssemblyTitle>
     <Company>Event Store LLP</Company>
@@ -54,7 +54,6 @@ $(MSBuildProjectDirectory)\..\Scripts\version\update-version.sh $(MSBuildProject
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EventStore.ClientAPI</RootNamespace>
     <AssemblyName>EventStore.ClientAPI</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <PreBuildEvent />

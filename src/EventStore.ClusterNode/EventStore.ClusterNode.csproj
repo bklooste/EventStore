@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>net461</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <OutputType>Exe</OutputType>
     <AssemblyTitle>EventStore.ClusterNode</AssemblyTitle>
@@ -44,7 +44,6 @@
     <RootNamespace>EventStore.ClusterNode</RootNamespace>
     <AssemblyName>EventStore.ClusterNode</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <StartupObject>EventStore.ClusterNode.Program</StartupObject>
     <ApplicationIcon>app2.ico</ApplicationIcon>

@@ -1,6 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <AssemblyTitle>EventStore.Common</AssemblyTitle>
     <Company>Event Store LLP</Company>
@@ -53,7 +53,6 @@
     <RootNamespace>EventStore.Common</RootNamespace>
     <AssemblyName>EventStore.Common</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PreBuildEvent />
     <PostBuildEvent />
