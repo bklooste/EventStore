@@ -61,12 +61,11 @@
       <HintPath>..\libs\EventStore.Rags.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-
-    <Reference Include="nunit.framework">
-      <HintPath>..\libs\nunit.framework.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TestConfigs\test_config_with_incorrectly_cased_option.yaml">
