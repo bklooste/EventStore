@@ -58,18 +58,19 @@
       <HintPath>..\libs\EventStore.Rags.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="HdrHistogram.NET, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <!--<Reference Include="HdrHistogram.NET, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\libs\hdrhistogram\HdrHistogram.NET.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    </Reference>-->
     <Reference Include="protobuf-net, Version=2.0.0.580, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\libs\protobuf-v2\protobuf-net.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+
+    <PackageReference Include="HdrHistogram" Version="2.5.0" />
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.5.0" />
-    
+        <!--<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />-->
     <!--<PackageReference Include="System.ServiceModel.Http" Version="4.5.1" />
     <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.1" />-->
     

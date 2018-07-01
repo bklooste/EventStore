@@ -4,25 +4,26 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using HdrHistogram.NET;
+using HdrHistogram;
 
 namespace EventStore.Core.Services.Histograms
 {
     //histogram service is just a static class used by everyone else if histograms are enabled.
+    //TODO use concurrent histogram
     public static class HistogramService
     {
         private const long NUMBEROFNS = 1000000000L;
         private static readonly Stopwatch _stopwatch = new Stopwatch();
-        private static readonly ConcurrentDictionary<string, Histogram> Histograms = new ConcurrentDictionary<string, Histogram>();
+        private static readonly ConcurrentDictionary<string, LongHistogram> Histograms = new ConcurrentDictionary<string, LongHistogram>();
 
         static HistogramService()
         {
             _stopwatch.Start();
         }
 
-        public static Histogram GetHistogram(string name)
+        public static LongHistogram GetHistogram(string name)
         {
-            Histogram ret;
+            LongHistogram ret;
             Histograms.TryGetValue(name, out ret);
             return ret;
         }
@@ -37,19 +38,19 @@ namespace EventStore.Core.Services.Histograms
         {
             if (value >= NUMBEROFNS) return;
             if(name == null) return;
-            Histogram hist;
+            LongHistogram hist;
             if(!Histograms.TryGetValue(name, out hist)) {
                 return;
             }
             lock (hist)
             {
-                hist.recordValue(value);
+                hist.RecordValue(value);
             }
         }
 
         public static void CreateHistogram(string name)
         {
-            Histograms.TryAdd(name, new Histogram(NUMBEROFNS, 3));
+            Histograms.TryAdd(name, new LongHistogram(NUMBEROFNS, 3));
         }
 
         public static void CreateHistograms()
@@ -87,7 +88,7 @@ namespace EventStore.Core.Services.Histograms
         public struct Measurement : IDisposable
         {
             public Stopwatch watch;
-            public Histogram Histogram;
+            public LongHistogram Histogram;
             public long Start;
 
             public void Dispose()
@@ -96,9 +97,9 @@ namespace EventStore.Core.Services.Histograms
                 lock (Histogram)
                 {
                     var valueToRecord = (((double)watch.ElapsedTicks - Start) / Stopwatch.Frequency) * 1000000000;
-                    if (valueToRecord < HighestPowerOf2(Histogram.getHighestTrackableValue()))
+                    if (valueToRecord < HighestPowerOf2(Histogram.HighestTrackableValue))
                     {
-                        Histogram.recordValue((long)valueToRecord);
+                        Histogram.RecordValue((long)valueToRecord);
                     }
                 }
             }

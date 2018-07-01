@@ -70,13 +70,10 @@
       <HintPath>..\libs\EventStore.Rags.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="NLog">
-      <HintPath>..\libs\NLog.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="NLog" Version="4.5.6" /> 
+    <!--<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0" />-->
   </ItemGroup>
   <ItemGroup>
     <None Include="Log\log.config" />
